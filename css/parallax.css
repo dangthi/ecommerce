@@ -1,0 +1,32 @@
+.parallax{
+	height:100vh;
+	background-position: left top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+#parallax-section-1{
+	width:100%;
+	margin:auto;
+	top:0px;
+	position:relative;
+	display:block;
+	background-image:url('../img/acceuil/vegetables.jpg');
+	opacity: 0.4;
+}
+
+
+/* Desktop Parallax Photo */
+@media (min-width: 651px){
+    #parallax-section-1 { 
+		background-image: url('../img/acceuil/vegetables.jpg');
+		opacity: 0.7;
+		margin-top: 0px;
+		top: -229px;
+		position: relative;
+	}
+}
+/* Mobile Parallax Photo */
+@media (max-width: 650px) {
+    #parallax-section-1 { background-image: url('../img/acceuil/buy-0.png'); height: 300px; }
+}
